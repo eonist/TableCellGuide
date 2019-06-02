@@ -1,7 +1,7 @@
 import UIKit
 
-class Ruler: UIView {
-    override func layoutSubviews() {
+public class Ruler: UIView {
+   override public func layoutSubviews() {
         self.layer.borderColor = UIColor.cyan.cgColor
         self.layer.borderWidth = 1
     }

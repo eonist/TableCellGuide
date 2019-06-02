@@ -4,7 +4,7 @@ extension ChildGuideKind where Self: UIView{
     ///
     /// Returns the parent's guide
     ///
-    var textGuide: UILayoutGuide? {
+    public var textGuide: UILayoutGuide? {
         return (self.superview as? ParentGuideKind)?.textGuide
     }
 }

@@ -4,7 +4,7 @@ extension ParentGuideKind where Self: UIView{
     ///
     /// - Abstract: Creates the text indentation guide for children to align to
     ///
-    func createTextIndentationGuide() -> UILayoutGuide{
+   public func createTextIndentationGuide() -> UILayoutGuide{
         let guide = UILayoutGuide()
         self.addLayoutGuide(guide)
         let margins = self.layoutMarginsGuide
@@ -18,7 +18,7 @@ extension ParentGuideKind where Self: UIView{
     /// - Abstract: loop through model.data strings and their fonts
     /// - Note: https://stackoverflow.com/a/17749593/5389500
     ///
-    func maxTextWidth() -> CGFloat {
+   public func maxTextWidth() -> CGFloat {
         return titleItems.map {
             $0.size(withAttributes:[.font: UIFont.systemFont(ofSize: 16)]).width // Returns the width of the rendered text (based on font and string)
         }.max() ?? 0
