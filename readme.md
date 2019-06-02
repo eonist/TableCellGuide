@@ -11,4 +11,4 @@
 ```
 
 ### Todo:
-- ADd img, code, example
+- Add img, code, example
