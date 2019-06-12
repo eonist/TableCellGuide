@@ -1,6 +1,6 @@
 import UIKit
 
-extension ChildGuideKind where Self: UIView{
+extension ChildGuideKind where Self: UIView {
     ///
     /// Returns the parent's guide
     ///

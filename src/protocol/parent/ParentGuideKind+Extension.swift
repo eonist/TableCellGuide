@@ -1,10 +1,10 @@
 import UIKit
 
-extension ParentGuideKind where Self: UIView{
+extension ParentGuideKind where Self: UIView {
     ///
     /// - Abstract: Creates the text indentation guide for children to align to
     ///
-   public func createTextIndentationGuide() -> UILayoutGuide{
+   public func createTextIndentationGuide() -> UILayoutGuide {
         let guide = UILayoutGuide()
         self.addLayoutGuide(guide)
         let margins = self.layoutMarginsGuide
@@ -19,8 +19,6 @@ extension ParentGuideKind where Self: UIView{
     /// - Note: https://stackoverflow.com/a/17749593/5389500
     ///
    public func maxTextWidth() -> CGFloat {
-        return titleItems.map {
-            $0.size(withAttributes:[.font: UIFont.systemFont(ofSize: 16)]).width // Returns the width of the rendered text (based on font and string)
-        }.max() ?? 0
+        return titleItems.map { $0.size(withAttributes: [.font: UIFont.systemFont(ofSize: 16)]).width }.max() ?? 0 // Returns the width of the rendered text (based on font and string) 
     }
 }
